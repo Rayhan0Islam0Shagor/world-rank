@@ -1,4 +1,4 @@
-import { Brightness6Rounded } from "@material-ui/icons";
+import { Brightness4Rounded, Brightness7Rounded } from "@material-ui/icons";
 import Head from "next/head";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -67,7 +67,7 @@ const Layout = ({ children, title = "World Ranks" }) => {
         </Link>
 
         <button onClick={switchTheme} className={styles.themeSwitcher}>
-          <Brightness6Rounded />
+          {theme === "light" ? <Brightness4Rounded /> : <Brightness7Rounded />}
         </button>
       </header>
 
